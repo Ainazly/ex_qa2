@@ -17,11 +17,11 @@ class TGUser(BaseModel):
 
 class Course(BaseModel):
     course_id = peewee.IntegerField()
-    image = peewee.TextField(null=True)
+    # image = peewee.TextField(null=True)
     title = peewee.CharField(null=True)
-    slug = peewee.CharField(null=True)
-    youtube_url = peewee.CharField(null=True)
-    blocks = peewee.TextField(null=True)
+    # slug = peewee.CharField(null=True)
+    # youtube_url = peewee.CharField(null=True)
+    # blocks = peewee.TextField(null=True)
 
     @classmethod
     def create_from_list(cls, list_of_data):
@@ -50,6 +50,6 @@ if not Course.table_exists():
 #     class Meta:
 #         database = db
 #
-#
+#\
 # if Course.table_exists():
 #     Course.create_table()
