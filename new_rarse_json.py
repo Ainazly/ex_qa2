@@ -24,10 +24,9 @@ def parse(link):
             'course_id': id_,
             'title': title
         })
-    print(data_list)
+    return data_list
 
 
 get_response(my_url)
 
-
-parse_objects = parse(my_url)
+parse(my_url)
